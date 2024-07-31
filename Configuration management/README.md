@@ -88,7 +88,7 @@ cfg_dir=/usr/local/nagios/etc/servers
 ```
 
 2. Host Configuration
-   Create a configuration file for your client machine, e.g., /usr/local/nagios/etc/servers/client_machine.cfg:
+   /usr/local/nagios/etc/servers/client_machine.cfg:
 
 ```
 define host {
