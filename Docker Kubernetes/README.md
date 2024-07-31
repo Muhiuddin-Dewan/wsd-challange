@@ -26,7 +26,7 @@ kubectl get events -n production --field-selector involvedObject.name=the_pod_na
 
 ### Answer - 3
 
-3. Possible reasons for pod restarts in Kubernetes
-   CPU Throttling: High CPU usage might lead to throttling or instability.
-   OOMKilled: The pod might be terminated if it exceeds its memory limits (OutOfMemory).
-   CrashLoopBackOff: Application crashes repeatedly, causing Kubernetes to restart the pod.
+3. Possible reasons for pod restarts in Kubernetes <br />
+   CPU Throttling: High CPU usage might lead to throttling or instability. <br />
+   OOMKilled: The pod might be terminated if it exceeds its memory limits (OutOfMemory). <br />
+   CrashLoopBackOff: Application crashes repeatedly, causing Kubernetes to restart the pod. <br />

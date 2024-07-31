@@ -1,9 +1,9 @@
 # Solution Kubernetes Helm
 
-1. How Prometheus works
+1. How Prometheus works <br />
    Prometheus collects logs/data from configured targets at given intervals and store locally. Also it can runs rules over this data to generate alerts.
 
-2. Creating custom Prometheus alerts
+2. Creating custom Prometheus alerts <br />
    Here's an example of an alert rule configuration:
 
 ```
