@@ -1,0 +1,24 @@
+---
+- name: Deploy NTP and configure
+  hosts: client
+  become: yes
+  tasks:
+    - name: Install chrony package
+      yum:
+        name: chrony
+        state: present
+
+    - name: Copy custom chrony.conf
+      copy:
+        src: ntp.conf
+        dest: /etc/chrony.conf
+        owner: root
+        group: root
+        mode: '0644'
+
+    - name: Ensure chrony is running and enabled
+      service:
+        name: chronyd
+        state: started
+        enabled: yes
+
